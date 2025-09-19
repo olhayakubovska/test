@@ -1,1 +1,1 @@
-![ картинка!!!!!!!!](image/my-work-2.png)
+![ картинка!!!!!!!!](image/my-work-small.png)
