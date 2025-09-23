@@ -1,12 +1,3 @@
-![ картинка!!!!!!!!](image/my-work-small.png)
-<!-- ![ картинка!!!!!!!!](image/my-work-small.png) -->
-![ картинка medium](image/medium.jpg)
-
-это главная страница
-
-
----
-
 
 # My Shop – интернет-магазин одежды
 
@@ -86,4 +77,86 @@ MONGO_URI=ваша_строка_подключения_к_mongodb
 
 * `npm run dev` – запуск сервера в режиме разработки (nodemon)
 
+
+Конечно! Вот перевод твоего README на английский:
+
+---
+
+# My Shop – Online Clothing Store
+
+The project consists of two parts: **Frontend** built with React and **Backend** using Node.js/Express + MongoDB.
+
+```
+project/
+├── frontend/   # React application
+└── backend/    # Node.js + Express API
+```
+
+---
+
+## Frontend
+
+**Tech Stack:**
+
+* React 18
+* Redux + Redux Thunk
+* React Router DOM
+* React Hook Form + Yup
+* styled-components / CSS Modules
+* Font Awesome
+
+**Installation and Run:**
+
+```
+cd frontend
+npm install
+npm start
+```
+
+The application will be available at: \[http\://localhost:3000]
+
+**Scripts:**
+
+* `npm start` – start the React development server
+* `npm run build` – build the production version
+
+![Main page of the application](image/loggedIn.png)
+
+---
+
+## 🛠 Backend
+
+**Tech Stack:**
+
+* Express
+* Mongoose (MongoDB)
+* JSON Web Token (JWT)
+* bcryptjs
+* cookie-parser
+* cors
+* dotenv
+* validator
+
+**Installation and Run:**
+
+```
+cd backend
+npm install
+npm run dev
+```
+
+The server will run at: \[http\://localhost:3002] (or another port set in `.env`)
+
+**Environment Variables:**
+
+Create a `.env` file in the `backend` folder:
+
+```
+PORT=3002
+MONGO_URI=your_mongodb_connection_string
+```
+
+**Scripts:**
+
+* `npm run dev` – start the server in development mode (nodemon)
 
