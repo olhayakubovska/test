@@ -1,91 +1,89 @@
-Конечно! Я могу оформить твой README полностью и красиво, объединив все блоки, роли пользователей, запуск проекта, технологический стек и примечания. Вот готовая версия:
 
-````markdown
-# Веб-приложение для записи к врачу
+# Doctor Appointment Web Application
 
-Приложение для записи к врачу, созданное с использованием **Node.js**, **Express** и **MongoDB**.  
-Пациенты оставляют заявки, а администратор просматривает их через админку.
+A web application for booking doctor appointments, built using **Node.js**, **Express**, and **MongoDB**.
+Patients can submit requests, and the administrator can view them through the admin panel.
 
 ---
 
-## 🚀 Запуск проекта
+## Running the Project
 
-1. Клонируем репозиторий:
+1. Clone the repository:
 
 ```bash
 git clone <url>
 cd project1
 ```
-````
 
-2. Устанавливаем зависимости:
+2. Install dependencies:
 
 ```bash
 npm install
 ```
 
-3. Запускаем приложение в режиме разработки:
+3. Run the application in development mode:
 
 ```bash
 npm run dev
 ```
 
-Приложение будет доступно по адресу: [http://localhost:3000](http://localhost:3000)
+The application will be available at: [http://localhost:3000](http://localhost:3000)
 
 ---
 
-## ⚙️ Используемые технологии
+## Technologies Used
 
-- **Backend:** Node.js, Express, Mongoose
-- **База данных:** MongoDB
-- **Шаблонизатор:** EJS
-- **Аутентификация:** JWT, bcryptjs, cookie-parser
-
----
-
-## 📝 Функционал
-
-### Пациенты
-
-- Оставляют заявку через форму на главной странице `/`
-- В форме указывают: `Имя`, `Номер телефона`, `Описание проблемы`
-
-### Администратор
-
-- Логин на `/login` с учетными данными:
-
-  - **Email:** [admin@admin.com](mailto:admin@admin.com)
-  - **Пароль:** 1111
-
-- После входа доступна админка `/admin` для просмотра всех заявок
-- Поддержка пагинации, сортировки и поиска заявок
+* **Backend:** Node.js, Express, Mongoose
+* **Database:** MongoDB
+* **Templating Engine:** EJS
+* **Authentication:** JWT, bcryptjs, cookie-parser
 
 ---
 
-## 📂 Структура проекта
+## Features
+
+### Patients
+
+* Submit a request via the form on the homepage `/`
+* The form requires: `Name`, `Phone number`, `Problem description`
+
+### Administrator
+
+* Login at `/login` using the following credentials:
+
+  * **Email:** [admin@admin.com](mailto:admin@admin.com)
+  * **Password:** 1111
+
+* After logging in, access the admin panel `/admin` to view all requests
+
+* Supports pagination, sorting, and search for requests
+
+---
+
+## Project Structure
 
 ```
 project1/
 │
-├─ index.js            # Основной файл сервера
-├─ user.controller.js  # Контроллер авторизации
-├─ auth.js             # Middleware проверки JWT
-├─ form.controller.js  # Контроллер работы с формой
+├─ index.js            # Main server file
+├─ user.controller.js  # Authorization controller
+├─ auth.js             # JWT verification middleware
+├─ form.controller.js  # Form handling controller
 ├─ model/
-│   └─ Form.js         # Модель данных заявки
-├─ views/              # Шаблоны EJS
-│   ├─ index.ejs       # Главная страница с формой
-│   ├─ login.ejs       # Страница логина
-│   └─ table.ejs       # Админка с таблицей заявок
-└─ public/             # Статические файлы (CSS, JS)
+│   └─ Form.js         # Request data model
+├─ views/              # EJS templates
+│   ├─ index.ejs       # Homepage with the form
+│   ├─ login.ejs       # Login page
+│   └─ table.ejs       # Admin panel with requests table
+└─ public/             # Static files (CSS, JS)
 ```
 
 ---
 
-## ⚠️ Примечания
+## Notes
 
-- Для работы приложения требуется установленный **MongoDB**
-- JWT секрет хранится в файле `constants.js`:
+* MongoDB must be installed to run the application
+* JWT secret is stored in `constants.js`:
 
 ```js
 export const constant = {
@@ -93,10 +91,11 @@ export const constant = {
 };
 ```
 
-- Доступ администратора:
+* Administrator credentials:
 
-  - **Email:** `admin@admin.com`
-  - **Пароль:** `1111`
+  * **Email:** `admin@admin.com`
+  * **Password:** `1111`
 
 ![main-page](image/img2.png)
 ![main-page](image/img3.png)
+
