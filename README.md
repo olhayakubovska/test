@@ -27,7 +27,7 @@ project/
 
 **Installation and Run:**
 
-```bash
+```
 cd frontend
 npm install
 npm start
@@ -40,7 +40,8 @@ The application will be available at [http://localhost:3000](http://localhost:30
 * `npm start` – start the React development server
 * `npm run build` – build the production version
 
----
+![main-page](image/img.png)
+
 
 ## ⚙️ Backend
 
@@ -57,7 +58,7 @@ The application will be available at [http://localhost:3000](http://localhost:30
 
 **Installation and Run:**
 
-```bash
+```
 cd backend
 npm install
 npm run dev
