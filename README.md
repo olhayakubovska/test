@@ -45,6 +45,9 @@ npm start
 * `npm start` – запуск dev-сервера React
 * `npm run build` – сборка production-версии
 
+
+![главная страница приложения](image/loggedIn.png)
+
 ---
 
 ## 🛠 Backend
