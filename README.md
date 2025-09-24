@@ -1,4 +1,3 @@
-````
 # Todolist
 
 Современное приложение **ToDo List**, созданное на **React**, **TypeScript**, **Redux Toolkit** и **Material UI**.
