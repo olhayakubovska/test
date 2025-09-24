@@ -1,14 +1,13 @@
 
 
-````
 Два простых проекта на **React** и **TypeScript**, созданных с использованием **Vite**.  
 Оба проекта демонстрируют работу со счётчиком, но с разным подходом к управлению состоянием:
 
 - **Counter-v1** – с использованием **Redux Toolkit**  
 - **Counter-v2** – без Redux, только React + TypeScript  
 
----
 
+````
 ##  Особенности проектов
 
 | Проект       | Особенности                                                        |
@@ -24,7 +23,7 @@
 
 ### 1. Клонирование репозитория
 
-```bash
+```
 git clone <url>
 ````
 
@@ -67,12 +66,12 @@ npm run dev
 
 ## Скриншоты
 
-**counter-v1 – Главная страница:**
-![main-page](images/main.png)
+**counter-v1**
 
-**counter-v1 – Настройки:**
+![main-page](images/main.png)
 ![settings-page](images/setting.png)
 
-**counter-v2 – Главная страница:**
+**counter-v2**
+
 ![main-v2-page](images/main-v2.png)
 
