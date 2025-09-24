@@ -87,7 +87,7 @@ Both projects demonstrate a counter implementation but with different approaches
 * **Counter-v2** – without Redux, only React + TypeScript
 
 ---
-
+````
 ## Project Highlights
 
 | Project    | Features                                                 |
@@ -101,7 +101,7 @@ Both projects demonstrate a counter implementation but with different approaches
 |            | - Configurable maximum and minimum values                |
 |            | - State management using React `useState`                |
 |            | - Strong typing with TypeScript                          |
-
+````
 ---
 
 ## Installation and Running
