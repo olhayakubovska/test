@@ -1,101 +1,78 @@
 
-# Doctor Appointment Web Application
 
-A web application for booking doctor appointments, built using **Node.js**, **Express**, and **MongoDB**.
-Patients can submit requests, and the administrator can view them through the admin panel.
+````
+Два простых проекта на **React** и **TypeScript**, созданных с использованием **Vite**.  
+Оба проекта демонстрируют работу со счётчиком, но с разным подходом к управлению состоянием:
+
+- **Counter-v1** – с использованием **Redux Toolkit**  
+- **Counter-v2** – без Redux, только React + TypeScript  
 
 ---
 
-## Running the Project
+##  Особенности проектов
 
-1. Clone the repository:
+| Проект       | Особенности                                                        |
+| ------------ | ------------------------------------------------------------------ |
+| **Counter-v1** | - Счётчик с возможностью увеличения и уменьшения значения<br>- Настройка максимального и минимального значения<br>- Управление состоянием через **Redux Toolkit**<br>- Чёткая типизация с **TypeScript** |
+| **Counter-v2** | - Счётчик с возможностью увеличения и уменьшения значения<br>- Настройка максимального и минимального значения<br>- Управление состоянием с помощью React `useState`/`useReducer`<br>- Чёткая типизация с **TypeScript** |
+
+---
+
+## Установка и запуск
+
+Оба проекта находятся в папке репозитория. Перейди в нужную папку и выполни команды.
+
+### 1. Клонирование репозитория
 
 ```bash
 git clone <url>
-cd project1
-```
+````
 
-2. Install dependencies:
+### 2. Запуск **counter-v1**
 
 ```bash
+cd counter-v1
 npm install
-```
-
-3. Run the application in development mode:
-
-```bash
 npm run dev
 ```
 
-The application will be available at: [http://localhost:3000](http://localhost:3000)
+Приложение будет доступно по адресу: [http://localhost:5173](http://localhost:5173)
 
----
+### 3. Запуск **counter-v2**
 
-## Technologies Used
-
-* **Backend:** Node.js, Express, Mongoose
-* **Database:** MongoDB
-* **Templating Engine:** EJS
-* **Authentication:** JWT, bcryptjs, cookie-parser
-
----
-
-## Features
-
-### Patients
-
-* Submit a request via the form on the homepage `/`
-* The form requires: `Name`, `Phone number`, `Problem description`
-
-### Administrator
-
-* Login at `/login` using the following credentials:
-
-  * **Email:** [admin@admin.com](mailto:admin@admin.com)
-  * **Password:** 1111
-
-* After logging in, access the admin panel `/admin` to view all requests
-
-* Supports pagination, sorting, and search for requests
-
----
-
-## Project Structure
-
-```
-project1/
-│
-├─ index.js            # Main server file
-├─ user.controller.js  # Authorization controller
-├─ auth.js             # JWT verification middleware
-├─ form.controller.js  # Form handling controller
-├─ model/
-│   └─ Form.js         # Request data model
-├─ views/              # EJS templates
-│   ├─ index.ejs       # Homepage with the form
-│   ├─ login.ejs       # Login page
-│   └─ table.ejs       # Admin panel with requests table
-└─ public/             # Static files (CSS, JS)
+```bash
+cd counter-v2
+npm install
+npm run dev
 ```
 
+Приложение будет доступно по адресу: [http://localhost:5173](http://localhost:5173) (порт может отличаться)
+
 ---
 
-## Notes
+##  Используемые технологии
 
-* MongoDB must be installed to run the application
-* JWT secret is stored in `constants.js`:
+### Общие для обоих проектов:
 
-```js
-export const constant = {
-  JWT_SECRET: "your-secret-key",
-};
-```
+* **React** – библиотека для построения интерфейсов
+* **TypeScript** – строгая типизация
+* **Vite** – инструмент для быстрого запуска и сборки проекта
 
-* Administrator credentials:
+### Дополнительно в **counter-v1**:
 
-  * **Email:** `admin@admin.com`
-  * **Password:** `1111`
+* **Redux Toolkit** – современный подход к управлению состоянием
+* **React-Redux** – интеграция Redux с React
 
-![main-page](image/img2.png)
-![main-page](image/img3.png)
+---
+
+## Скриншоты
+
+**counter-v1 – Главная страница:**
+![main-page](images/main.png)
+
+**counter-v1 – Настройки:**
+![settings-page](images/setting.png)
+
+**counter-v2 – Главная страница:**
+![main-v2-page](images/main-v2.png)
 
