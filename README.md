@@ -1,12 +1,12 @@
-````markdown
-# Quiz App 📝
+
+# Quiz App 
 
 A web application for creating and taking quizzes.  
 Backend is built with **Node.js** and **Express**, frontend uses **EJS**, and data is stored in **MongoDB**.
 
 ---
 
-## 🚀 Features
+## Features
 
 - **Create Quizzes** – users can create quizzes with multiple questions.  
 - **Take Quizzes** – users can attempt quizzes and see their results.  
@@ -15,7 +15,7 @@ Backend is built with **Node.js** and **Express**, frontend uses **EJS**, and da
 
 ---
 
-## 💻 Technologies
+## Technologies
 
 - **Node.js** – backend runtime environment.  
 - **Express.js** – minimalistic web framework for routing and APIs.  
@@ -25,7 +25,8 @@ Backend is built with **Node.js** and **Express**, frontend uses **EJS**, and da
 
 ---
 
-##  Getting Started
+## Getting Started
+
 
 ### Requirements
 
@@ -33,12 +34,11 @@ Backend is built with **Node.js** and **Express**, frontend uses **EJS**, and da
 - **MongoDB** (local instance or cloud, e.g., MongoDB Atlas)
 
 ### Installation
-
 1. **Clone the repository**
 
 ```bash
 git clone <repository_url>
-````
+```
 
 2. **Install dependencies**
 
@@ -107,5 +107,6 @@ quiz-app/
 
 ![Главная страница](images/main.png)
 ![Страница для незарегистрированных пользователей](images/quiz.png)
-![Страница для незарегистрированных пользователей](images/setting.png)
+![Страница для незарегистрированных пользователей](images/editing.png)
+
 
