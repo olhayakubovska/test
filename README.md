@@ -64,12 +64,12 @@ npm run dev
 
 ## Скриншоты
 
-* **counter-v1**
+**counter-v1**
 
 ![main-page](images/main.png)
 ![settings-page](images/setting.png)
 
-* **counter-v2**
+**COUNTER-V2**
 
 ![main-v2-page](images/main-v2.png)
 
