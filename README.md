@@ -1,7 +1,5 @@
-Вот твой README на английском языке:
 
-```markdown
-# Tic-Tac-Toe 🎮  
+# Tic-Tac-Toe 
 
 This repository contains **three versions** of the classic Tic-Tac-Toe game:  
 1. **React only** — basic implementation with local component state.  
@@ -10,7 +8,7 @@ This repository contains **three versions** of the classic Tic-Tac-Toe game:
 
 ---
 
-## 📂 Repository Structure
+##  Repository Structure
 
 ```
 root/
@@ -30,7 +28,6 @@ root/
 ├─ package.json
 └─ ...
 ````
-
 ---
 
 ## 1️⃣ Tic-Tac-Toe (React)
@@ -100,7 +97,7 @@ npm start
 
 ---
 
-## ⚠️ Notes
+##  Notes
 
 * All apps run on port `3000` by default. Change the port if multiple apps are running simultaneously.
 * Built with **Create React App** for easy setup.
