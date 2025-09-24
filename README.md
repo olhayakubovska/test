@@ -96,7 +96,8 @@ quiz-app/
 * A running MongoDB instance is required.
 * By default, the app runs on port `3000`; this can be changed in the server configuration.
 * `.env` is used to store the MongoDB connection string securely.
-
+ 
+---
 
 ![Главная страница](images/main.png)
 ![Страница для незарегистрированных пользователей](images/quiz.png)
