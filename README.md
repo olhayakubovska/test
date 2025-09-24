@@ -28,13 +28,13 @@ Both projects demonstrate a counter implementation but with different approaches
 Both projects are located in the repository folder.
 Navigate to the desired folder and run the commands.
 
-### 1. Clone the repository
+### Clone the repository
 
 ```bash
 git clone <url>
 ```
 
-### 2. Run **counter-v1**
+###  Run **counter-v1**
 
 ```bash
 cd counter-v1
@@ -44,7 +44,7 @@ npm run dev
 
 The application will be available at: [http://localhost:5173](http://localhost:5173)
 
-### 3. Run **counter-v2**
+### Run **counter-v2**
 
 ```bash
 cd counter-v2
