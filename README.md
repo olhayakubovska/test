@@ -39,12 +39,6 @@ npm run dev
 
 Приложение будет доступно по адресу: [http://localhost:3000](http://localhost:3000)
 
-4. **Сборка проекта для продакшена:**
-
-```bash
-npm run build
-```
-
 ## ⚙️ Используемые технологии
 
 - **React 19** – библиотека для построения интерфейсов
@@ -71,7 +65,7 @@ VITE_BASE_URL=https://social-network.samuraijs.com/api/1.1
 VITE_API_KEY=
 ```
 
-- Интерфейс построен на **Material UI**
+
 
 ---
 
@@ -109,7 +103,7 @@ todolist-main/
     │   ├─ types/
     │   └─ utils/
     │
-    └─ features/       # Модульные части приложения (feature-sliced)
+    └─ features/       # Модульные части приложения 
         │
         ├─ auth/       # Аутентификация
         │
