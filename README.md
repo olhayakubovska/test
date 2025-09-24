@@ -1,234 +1,111 @@
-# Todolist
+````markdown
+# Quiz App 📝
 
-Современное приложение **ToDo List**, созданное на **React**, **TypeScript**, **Redux Toolkit** и **Material UI**.
-Приложение позволяет управлять задачами — добавлять, удалять и редактировать их — с удобным интерфейсом.
-
----
-
-##  Функционал
-
-- **CRUD-операции** с задачами (добавление, редактирование, удаление)
-- Отметка задач как выполненных
-- Валидация данных с помощью **React Hook Form** и **Zod**
-- Управление состоянием и взаимодействие с API через **Redux Toolkit Query (RTK Query)**
-- Навигация по страницам с помощью **React Router**
-- Стилизация с помощью **Material UI (MUI)**
+A web application for creating and taking quizzes.  
+Backend is built with **Node.js** and **Express**, frontend uses **EJS**, and data is stored in **MongoDB**.
 
 ---
 
-## 🚀 Установка и запуск
+## 🚀 Features
 
-1. **Клонируйте репозиторий:**
+- **Create Quizzes** – users can create quizzes with multiple questions.  
+- **Take Quizzes** – users can attempt quizzes and see their results.  
+- **Results History** – view past attempts and scores.  
+- **User-Friendly Interface** – clean and intuitive design.
+
+---
+
+## 💻 Technologies
+
+- **Node.js** – backend runtime environment.  
+- **Express.js** – minimalistic web framework for routing and APIs.  
+- **EJS** – templating engine for server-side HTML rendering.  
+- **MongoDB** – NoSQL database for storing questions, answers, and results.  
+- **Mongoose** – ODM for working with MongoDB using JS objects.
+
+---
+
+##  Getting Started
+
+### Requirements
+
+- **Node.js** (>= 18 recommended)  
+- **MongoDB** (local instance or cloud, e.g., MongoDB Atlas)
+
+### Installation
+
+1. **Clone the repository**
 
 ```bash
-git clone <url>
-
+git clone <repository_url>
 ````
 
-2. **Установите зависимости:**
+2. **Install dependencies**
 
 ```bash
 npm install
 ```
 
-3. **Запустите проект в режиме разработки** (порт 3000):
+3. **Configure environment variables**
 
-```bash
-npm run dev
-```
-
-Приложение будет доступно по адресу: [http://localhost:3000](http://localhost:3000)
-
-## ⚙️ Используемые технологии
-
-- **React 19** – библиотека для построения интерфейсов
-- **TypeScript** – строгая типизация
-- **Redux Toolkit** – современный подход к управлению состоянием
-- **RTK Query** – интеграция с API и управление кэшированием
-- **React-Redux** – интеграция Redux с React
-- **React Hook Form** – управление формами
-- **Zod** – валидация данных
-- **React Router 7** – маршрутизация приложения
-- **Material UI (MUI)** – готовые UI-компоненты
-- **Vite** – быстрый сборщик для разработки
-
----
-
-## Примечания
-
-- Для корректной работы рекомендуется **Node.js версии >= 18**
-- Проект использует **TypeScript**, поэтому все компоненты и состояние строго типизированы
-- Интеграция с API реализована через **RTK Query**, ключи и токены берутся из `.env`:
+Create a `.env` file in the root directory:
 
 ```env
-VITE_BASE_URL=https://social-network.samuraijs.com/api/1.1
-VITE_API_KEY=
-```
-
-
-
----
-
-## Структура проекта
-
-```
-todolist-main/
-│
-├─ .env                # Переменные окружения (API, ключи)
-├─ .gitignore
-├─ .prettierrc
-├─ index.html
-├─ package.json
-├─ package-lock.json
-├─ README.md
-├─ tsconfig.json
-└─ vite.config.ts
-│
-└─ src/
-    │
-    ├─ app/            # Центральное ядро приложения и Redux-конфигурация
-    │   ├─ app-slice.ts
-    │   ├─ App.tsx
-    │   ├─ baseApi.ts  # Базовая конфигурация RTK Query
-    │   └─ store.ts
-    │
-    ├─ common/         # Переиспользуемый код, утилиты и компоненты
-    │   ├─ actions/
-    │   ├─ components/
-    │   ├─ constants/
-    │   ├─ hooks/
-    │   ├─ routing/
-    │   ├─ styles/
-    │   ├─ theme/
-    │   ├─ types/
-    │   └─ utils/
-    │
-    └─ features/       # Модульные части приложения 
-        │
-        ├─ auth/       # Аутентификация
-        │
-        └─ todolists/  # Работа с задачами
+MONGODB_URI=your_mongodb_connection_string
+PORT=3000
 
 ```
 
----
-
-![main-page](images/main.png)
-
-
-
-# Todolist
-
-A modern **ToDo List** application built with **React**, **TypeScript**, **Redux Toolkit**, and **Material UI**.
-The app allows you to manage tasks — add, delete, and edit them — with a user-friendly interface.
-
----
-
-## Features
-
-* **CRUD operations** for tasks (create, read, update, delete)
-* Mark tasks as completed
-* Data validation with **React Hook Form** and **Zod**
-* State management and API integration via **Redux Toolkit Query (RTK Query)**
-* Page navigation with **React Router**
-* Styling using **Material UI (MUI)**
-
----
-
-## 🚀 Installation and Running
-
-1. **Clone the repository:**
+4. **Run the application**
 
 ```bash
-git clone <url>
+npm start
 ```
 
-2. **Install dependencies:**
-
-```bash
-npm install
-```
-
-3. **Run the project in development mode** (port 3000):
-
-```bash
-npm run dev
-```
-
-The application will be available at: [http://localhost:3000](http://localhost:3000)
-
----
-
-## ⚙️ Technologies Used
-
-* **React 19** – library for building user interfaces
-* **TypeScript** – strong typing
-* **Redux Toolkit** – modern approach to state management
-* **RTK Query** – API integration and caching
-* **React-Redux** – integration of Redux with React
-* **React Hook Form** – form management
-* **Zod** – data validation
-* **React Router 7** – application routing
-* **Material UI (MUI)** – prebuilt UI components
-* **Vite** – fast build tool for development
-
----
-
-## Notes
-
-* Recommended **Node.js version >= 18**
-* The project uses **TypeScript**, so all components and state are strictly typed
-* API integration is implemented using **RTK Query**; keys and tokens are stored in `.env`:
-
-```env
-VITE_BASE_URL=https://social-network.samuraijs.com/api/1.1
-VITE_API_KEY=
-```
+The app will run at: [http://localhost:3000](http://localhost:3000)
 
 ---
 
 ## Project Structure
 
 ```
-todolist-main/
+quiz-app/
 │
-├─ .env                # Environment variables (API, keys)
-├─ .gitignore
-├─ .prettierrc
-├─ index.html
-├─ package.json
-├─ package-lock.json
-├─ README.md
-├─ tsconfig.json
-└─ vite.config.ts
-│
-└─ src/
-    │
-    ├─ app/            # Core of the app and Redux configuration
-    │   ├─ app-slice.ts
-    │   ├─ App.tsx
-    │   ├─ baseApi.ts  # Base configuration for RTK Query
-    │   └─ store.ts
-    │
-    ├─ common/         # Reusable code, utilities, and components
-    │   ├─ actions/
-    │   ├─ components/
-    │   ├─ constants/
-    │   ├─ hooks/
-    │   ├─ routing/
-    │   ├─ styles/
-    │   ├─ theme/
-    │   ├─ types/
-    │   └─ utils/
-    │
-    └─ features/       # Modular parts of the application
-        │
-        ├─ auth/       # Authentication
-        │
-        └─ todolists/  # Task management
+├─ public/              # Static files (CSS, JS, images)
+│   ├─ script.js
+│   └─ styles.css
+├─ views/               # EJS templates
+│   └─ index.ejs
+├─ model/               # Database models and schemas
+│   ├─ Answers.js
+│   └─ Question.js
+├─ controllers/         # Logic connecting models and views
+│   └─ controller.js
+├─ index.js             # Main server entry point
+├─ .env                 # Environment variables
+├─ .gitignore           # Files/folders to ignore in Git
+├─ package.json         # Project configuration and dependencies
+├─ package-lock.json    # Exact versions of dependencies
+└─ README.md            # Project documentation
 ```
 
 ---
 
-![main-page](images/main.png)
+
+
+![Main Page](images/main.png)
+![Unlogged User Page](images/unloggedIn.png)
+
+---
+
+##  Notes
+
+* A running MongoDB instance is required.
+* By default, the app runs on port `3000`; this can be changed in the server configuration.
+* `.env` is used to store the MongoDB connection string securely.
+
+
+![Главная страница](images/main.png)
+![Страница для незарегистрированных пользователей](images/quiz.png)
+![Страница для незарегистрированных пользователей](images/setting.png)
 
