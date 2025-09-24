@@ -13,7 +13,6 @@ This repository contains **three versions** of the classic Tic-Tac-Toe game:
 ## 📂 Repository Structure
 
 ```
-
 root/
 │
 ├─ my-project-tic-tac-toe/              # Version 1 – React only
@@ -30,7 +29,6 @@ root/
 ├─ src/
 ├─ package.json
 └─ ...
-
 ````
 
 ---
