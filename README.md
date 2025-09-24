@@ -91,13 +91,6 @@ quiz-app/
 
 ---
 
-
-
-![Main Page](images/main.png)
-![Unlogged User Page](images/unloggedIn.png)
-
----
-
 ##  Notes
 
 * A running MongoDB instance is required.
